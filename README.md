@@ -120,8 +120,15 @@ Save this as `layouts/shortcodes/player.html`:
 		</media-video-layout>
 	</media-player>
 </div>
-<a href="{{ $hlsPath }}">HLS</a>
-<a href="{{ $dashPath }}">DASH</a>
+<ul>
+	Links:
+	<li>
+		<a href="{{ $hlsPath }}">HLS</a>
+	</li>
+	<li>
+		<a href="{{ $dashPath }}">DASH</a>
+	</li>
+</ul>
 ```
 
 Then, in the video page, include the shortcode:
